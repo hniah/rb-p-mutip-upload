@@ -1,0 +1,9 @@
+h1
+  | My Images
+= form_for(Image.new, html: { multipart: true, class: "dropzone"}) do |f|
+  .fallback
+    = f.file_field :avatar
+    br
+    = f.submit "Upload my Avatar"
+.index
+  = render "index"

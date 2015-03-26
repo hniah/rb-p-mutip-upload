@@ -1,0 +1,10 @@
+h1 Username
+
+
+ul#users
+	.a a
+	= render @users
+
+= form_for(@user, remote: true) do |f|
+	= f.text_field :username
+	= f.submit "Submit"
