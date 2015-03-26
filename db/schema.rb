@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150326021445) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "images", force: :cascade do |t|
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
