@@ -1,0 +1,29 @@
+form#fileupload action="//jquery-file-upload.appspot.com/" enctype="multipart/form-data" method="POST"
+  noscript
+    input name="redirect" type="hidden" value="https://blueimp.github.io/jQuery-File-Upload/" /
+  .row.fileupload-buttonbar
+    .col-lg-7
+      span.btn.btn-success.fileinput-button
+        i.glyphicon.glyphicon-plus
+        span Add files...
+        input multiple="" name="files[]" type="file" /
+      button.btn.btn-primary.start type="submit"
+        i.glyphicon.glyphicon-upload
+        span Start upload
+      button.btn.btn-warning.cancel type="reset"
+        i.glyphicon.glyphicon-ban-circle
+        span Cancel upload
+      button.btn.btn-danger.delete type="button"
+        i.glyphicon.glyphicon-trash
+        span Delete
+      input.toggle type="checkbox" /
+      span.fileupload-process
+    .col-lg-5.fileupload-progress.fade
+      .progress.progress-striped.active aria-valuemax="100" aria-valuemin="0" role="progressbar"
+        .progress-bar.progress-bar-success style="width:0%;"
+      .progress-extended &nbsp;
+  table.table.table-striped role="presentation"
+    tbody.files
+
+#template-upload đsadsadsasa
+#template-download đsadsadsasa
