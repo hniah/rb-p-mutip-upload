@@ -31,6 +31,7 @@ gem 'will_paginate', '~> 3.0.7'
 gem 'paperclip', '~> 4.2.0'
 gem 'dropzonejs-rails', '~> 0.4.16'
 gem 'aws-sdk', '~> 1.5.7'
+gem 'simple_form'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -46,5 +47,7 @@ group :development, :test do
   gem 'spring'
 
   gem 'dotenv-rails'
+
+  gem 'better_errors'
 end
 
