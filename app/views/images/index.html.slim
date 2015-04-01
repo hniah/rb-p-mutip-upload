@@ -2,8 +2,26 @@ h1
   | My Images
 = form_for(Image.new, html: { multipart: true, class: "dropzone"}) do |f|
   .fallback
-    = f.file_field :avatar
+    = f.file_field :picture
     br
     = f.submit "Upload my Avatar"
 .index
   = render "index"
+
+javascript:
+  $(document).ready(function () {
+    // disable auto discover
+    Dropzone.autoDiscover = false;
+
+
+    var dropzone = new Dropzone(".dropzone", {
+      maxFilesize: 256, // Set the maximum file size to 256 MB
+      paramName: "image[picture]", // Rails expects the file upload to be something like model[field_name]
+      addRemoveLinks: false // Don't show remove links on dropzone itself.
+    });
+
+    dropzone.on("success", function (file) {
+      this.removeFile(file)
+      $.getScript("/images")
+    })
+  });

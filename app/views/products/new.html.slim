@@ -1,1 +1,36 @@
 #product-new-container
+  = simple_form_for @product do |f|
+    = f.input :name
+    = f.input :description
+    = f.input :product_images
+    = f.submit 'Submit'
+
+
+  = form_for(ImageTemp.new, html: { multipart: true, class: 'dropzone'}) do |f|
+    .fallback
+      = f.file_field :picture
+      br
+      = f.submit 'Upload Picture'
+
+  .pictures_upload
+
+
+javascript:
+  $(document).ready(function () {
+    var product_product_images = $('#product_product_images');
+    // disable auto discover
+    Dropzone.autoDiscover = false;
+
+
+    var dropzone = new Dropzone(".dropzone", {
+      maxFilesize: 256, // Set the maximum file size to 256 MB
+      paramName: "image_temp[picture]", // Rails expects the file upload to be something like model[field_name]
+      addRemoveLinks: false // Don't show remove links on dropzone itself.
+    });
+
+    dropzone.on("success", function (file, response) {
+      product_product_images.val(product_product_images.val()+response.img_id+',');
+      this.removeFile(file)
+      $.getScript("/image_temps");
+    })
+  });
