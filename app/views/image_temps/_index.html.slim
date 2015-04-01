@@ -1,0 +1,3 @@
+- @images.each do |image|
+  .img-thumbnail
+    = image_tag image.picture.url(:thumb), alt: image.picture.url(:thumb)
