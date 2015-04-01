@@ -24,13 +24,11 @@ ActiveRecord::Schema.define(version: 20150331091520) do
   end
 
   create_table "images", force: :cascade do |t|
-    t.string   "avatar_file_name"
-    t.string   "avatar_content_type"
-    t.integer  "avatar_file_size"
-    t.datetime "avatar_updated_at"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
     t.integer  "product_id"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
   end
 
   create_table "posts", force: :cascade do |t|
