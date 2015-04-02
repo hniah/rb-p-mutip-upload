@@ -32,6 +32,7 @@ gem 'paperclip', '~> 4.2.0'
 gem 'dropzonejs-rails', '~> 0.4.16'
 gem 'aws-sdk', '~> 1.5.7'
 gem 'simple_form'
+gem 'responders', '~> 2.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

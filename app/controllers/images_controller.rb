@@ -1,10 +1,8 @@
 class ImagesController < ApplicationController
-
   def index
 
   	@images = Image.all
     @image = Image.new
-    @image.perform(1)
 
   end
 
@@ -21,6 +19,4 @@ class ImagesController < ApplicationController
   def image_params
     params.require(:image).permit(:avatar)
   end
-
-
 end

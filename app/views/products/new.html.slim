@@ -13,6 +13,7 @@
       = f.submit 'Upload Picture'
 
   .pictures_upload
+    = render 'image_temps/index' 
 
 
 javascript:
@@ -31,6 +32,6 @@ javascript:
     dropzone.on("success", function (file, response) {
       product_product_images.val(product_product_images.val()+response.img_id+',');
       this.removeFile(file)
-      $.getScript("/image_temps");
+      $.getScript("/image_temps/?q="+product_product_images.val());
     })
   });

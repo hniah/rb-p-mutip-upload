@@ -1,7 +1,7 @@
 class ImageTempsController < ApplicationController
 
   def index
-    @images = ImageTemp.all
+    @images = ImageTemp.where('id in ('+param_q+')')
   end
 
   def create
@@ -18,4 +18,7 @@ class ImageTempsController < ApplicationController
     params.require(:image_temp).permit(:picture)
   end
 
+  def param_q
+    params.require(:q)[0...-1]
+  end
 end

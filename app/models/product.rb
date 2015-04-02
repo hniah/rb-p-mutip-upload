@@ -2,6 +2,8 @@ class Product < ActiveRecord::Base
   has_many :images
   attr_accessor :product_images
   validates  :product_images, presence: true
+  validates  :name, presence: true
+  validates  :description, presence: true
 
   def move_image(id, pid)
     image = ImageTemp.find(id)
