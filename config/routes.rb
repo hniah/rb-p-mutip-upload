@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :images, only: [:index, :create]
-  root to: "products#new"
+  root to: "products#index"
 
   get 'posts/index'
 

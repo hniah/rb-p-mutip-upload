@@ -2,13 +2,31 @@ doctype html
 html
   head
     title
-      | MultipleImageUploadExampleApp
+      | Upload
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
-    = stylesheet_link_tag    'http://yandex.st/bootstrap/3.1.1/css/bootstrap.min.css', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'http://yandex.st/bootstrap/3.1.1/js/bootstrap.min.js', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    #main-container.container
-      .col-md-12
-        = yield
+    nav.navbar.navbar-inverse.navbar-fixed-top role="navigation"
+      
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand href="#{root_path}"  Upload
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li= link_to (fa_icon("edit", text: t('menu.post'))),new_product_path, class: 'new-posts' 
+
+    .container
+      .row
+        .col-lg-12
+          h1.page-header
+            | Upload
+            small Do it yourself 
+    .container
+      = yield
+

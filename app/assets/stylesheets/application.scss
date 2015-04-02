@@ -15,3 +15,8 @@
  *= require_self
  *= require dropzone/basic
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+body {
+	padding-top: 70px;
+}

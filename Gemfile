@@ -33,6 +33,8 @@ gem 'dropzonejs-rails', '~> 0.4.16'
 gem 'aws-sdk', '~> 1.5.7'
 gem 'simple_form'
 gem 'responders', '~> 2.0'
+gem 'bootstrap-sass'
+gem "font-awesome-rails"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
