@@ -1,12 +1,1 @@
-#products-container.col-md-12
-  - if @products.present?
-    - @products.each do |p|
-      .row
-        .post data-id= "#{p.id}"
-          .col-md-7
-            .img-responsive.img-rounded
-            - if p.images.present?
-              = link_to image_tag(p.images.first.picture.url(:large)), product_url(p)
-
-
-    hr
+h1 ddsadasdas
