@@ -5,6 +5,7 @@
         .post data-id= "#{p.id}"
           .col-md-7
             .img-responsive.img-rounded
+            - if p.images.present?
               = link_to image_tag(p.images.first.picture.url(:large)), product_url(p)
 
           

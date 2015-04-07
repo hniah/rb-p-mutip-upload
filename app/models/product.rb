@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
-  has_many :images
+  has_many :images, dependent: :destroy
   attr_accessor :product_images
   validates  :product_images, presence: true
   validates  :name, presence: true
