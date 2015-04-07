@@ -28,12 +28,14 @@
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v4.2.1, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.2.1, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v6.0.0, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v5.1.8, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="aws-sdk (v1.5.8, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="better_errors (v2.1.1, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="binding_of_caller (v0.7.2, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.3.4.1, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.9.1, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="byebug (v4.0.3, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="byebug (v4.0.4, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="climate_control (v0.0.3, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cocaine (v0.5.7, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coderay (v1.1.0, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
@@ -47,6 +49,7 @@
     <orderEntry type="library" scope="PROVIDED" name="dropzonejs-rails (v0.4.16, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.4.0, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="font-awesome-rails (v4.3.0.0, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.3.3, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.3, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hpricot (v0.8.6, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
@@ -54,7 +57,6 @@
     <orderEntry type="library" scope="PROVIDED" name="httparty (v0.13.3, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.7.0, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.2.12, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="jquery-fileupload-rails (v0.4.5, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.0.3, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.2, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.0.1, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
@@ -74,9 +76,9 @@
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v1.0.6, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.0.2, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.2.1, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="s3_direct_upload (v0.1.7, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="responders (v2.1.0, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.4.13, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.1, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.0, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sdoc (v0.4.1, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="simple_form (v3.1.0, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="slim (v3.0.3, RVM: ruby-2.2.1 [unotrusive]) [gem]" level="application" />
