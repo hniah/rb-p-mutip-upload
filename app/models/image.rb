@@ -9,5 +9,5 @@ class Image < ActiveRecord::Base
                     path: PATH
   validates_attachment :picture,
                        content_type: {content_type: /\Aimage\/.*\Z/},
-                       size: VALIDATE_SIZE 
+                       size: VALIDATE_SIZE
 end
