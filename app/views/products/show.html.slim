@@ -1,0 +1,8 @@
+#posts-index
+  - if @product.present?
+    .row
+      .post data-id= "#{@product.id}"
+        .col-md-7
+          .img-responsive.img-rounded
+            - @product.images.each do |image|
+              = image_tag(image.picture.url(:large))
