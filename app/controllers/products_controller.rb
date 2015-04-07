@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index
-
+    @products = Product.all
   end
 
   def new
@@ -8,9 +8,11 @@ class ProductsController < ApplicationController
     if params[:product_images].present?
       @images = ImageTemp.where('id in ('+params[:product_images][0...-1]+')')
     end
-    
   end
 
+  # def show
+  #   @product = Product.find(params[:id])
+  # end
   def create
     @product = Product.new(product_params)
     if @product.save
