@@ -15,11 +15,14 @@ class Product < ActiveRecord::Base
                  picture_file_size: image.picture_file_size, picture_updated_at: image.picture_updated_at, product_id:pid)
 
     s3 = AWS::S3.new
-    styleImage = %w[original_ small_ thumb_ large_]
+    folder_tmp= 'public/images/tmp/%{idt}/' % {idt: idt}
+    styleImage = image.picture.styles.keys.push(:original)
     styleImage.each do |style|
-      paperclip_file_path = "public/images/products/#{image.id}/#{style+image.picture_file_name}"
-      s3.buckets[Rails.configuration.aws[:bucket]].objects[paperclip_file_path].copy_from("public/images/tmp/#{idt}/#{style+image.picture_file_name}", acl: :public_read)
+      paperclip_file_path = 'public/images/products/%{iid}/%{style}_%{file_name}' % {iid: image.id, style: style, file_name: image.picture_file_name}
+      img_temp = '%{folder_tmp}%{style}_%{file_name}' % {folder_tmp: folder_tmp, style: style, file_name: image.picture_file_name}
+      s3.buckets[Rails.configuration.aws[:bucket]].objects[paperclip_file_path].copy_from(img_temp, acl: :public_read)
     end
-    s3.buckets[Rails.configuration.aws[:bucket]].objects.with_prefix("public/images/tmp/#{idt}/").delete_all
+
+    s3.buckets[Rails.configuration.aws[:bucket]].objects.with_prefix(folder_tmp).delete_all
   end
 end
